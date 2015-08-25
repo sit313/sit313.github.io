@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>My jQuery Mobile Site</title>
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
+		<meta name="description" content="This site was created from a template originally designed and developed by Chris Converse - http://chrisconverse.com" />
+		<link rel="stylesheet" href="includes/themes/mycompany_theme.min.css" />
+		<link rel="stylesheet" href="includes/jquery.mobile-1.0.1/jquery.mobile.structure-1.0.1.min.css" />	
+		<!-- <link rel="stylesheet" href="includes/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.css" /> -->
+		<link rel="stylesheet" href="includes/mycompany.css" />
+		<script src="includes/jquery-1.6.4.min.js"></script>
+		<script src="includes/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.js"></script>
+		<script src="includes/mycompany.js"></script>
+	</head>
+	<body>
+
+		<div data-role="page" id="home" data-theme="a">
+			<div data-role="header">
+				<h1>Homepage</h1>
+			</div>
+			<div data-role="content">
+				<a href="#about_us" data-role="button" data-icon="arrow-r" data-iconpos="right">About Us</a>
+				<a href="#services" data-role="button" data-icon="arrow-r" data-iconpos="right">Services</a>
+				<a href="#locations" data-role="button" data-icon="arrow-r" data-iconpos="right">Find a Location</a>
+				<a href="#contact_us" data-role="button" data-icon="info" data-iconpos="left" data-rel="dialog" data-transition="pop" id="contact">Contact Us</a>
+			</div>
+			<div data-role="footer">
+				<h4>©2012 myCompany</h4>
+			</div>
+		</div>
+		
+		<div data-role="page" id="about_us" data-title="About Us">
+			<div data-role="header">
+				<h1>About Us</h1>
+				<a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext">back</a>
+			</div>
+			<div data-role="content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p><img style="float:right;margin-left:15px;" src="images/photo_about_us.jpg" />Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div data-role="footer">
+				<div data-role="controlgroup" data-type="horizontal">
+					<a href="#home" data-role="button" data-icon="home">Home</a>
+					<a href="#contact_us" data-role="button" data-icon="info" data-role="button" data-rel="dialog" data-transition="pop">Contact Us</a>
+				</div>
+				<h4>©2012 myCompany</h4>
+			</div>
+		</div>
+		
+		<div data-role="page" id="services" data-title="Services">
+			<div data-role="header">
+				<h1>Services</h1>
+				<a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext">back</a>
+			</div>
+			<div data-role="content">
+				<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div data-role="controlgroup">
+					<a href="services/service_01.html" data-role="button" data-icon="arrow-r" data-iconpos="right">First Service</a>
+					<a href="services/service_02.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Second Service</a>
+					<a href="services/service_03.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Third Service</a>
+				</div>
+				<p>Find a <a href="#locations">location near you</a>.</p>
+			</div>
+			<div data-role="footer">
+				<div data-role="controlgroup" data-type="horizontal">
+					<a href="#home" data-role="button" data-icon="home">Home</a>
+					<a href="#contact_us" data-role="button" data-icon="info" data-role="button" data-rel="dialog" data-transition="pop">Contact Us</a>
+				</div>
+				<h4>©2012 myCompany</h4>
+			</div>
+		</div>
+		
+		<div data-role="page" id="locations" data-title="Find a Locations">
+			<div data-role="header">
+				<h1>Locations</h1>
+				<a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext">back</a>
+			</div>
+			<div data-role="content">
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<h2>Find a location</h2>
+				<ul data-role="listview" data-filter="true" data-inset="true" class="countries">
+					<li><a href="#contact_us">Albania</a></li>
+					<li><a href="#contact_us">Algeria</a></li>
+					<li><a href="#contact_us">Argentina</a></li>
+					<li><a href="#contact_us">Belgium</a></li>
+					<li><a href="#contact_us">Belize</a></li>
+					<li><a href="#contact_us">Bulgaria</a></li>
+					<li><a href="#contact_us">Canada</a></li>
+					<li><a href="#contact_us">Croatia</a></li>
+					<li><a href="#contact_us">Cyprus</a></li>
+					<li><a href="#contact_us">Czech Republic</a></li>
+					<li><a href="#contact_us">Denmark</a></li>
+					<li><a href="#contact_us">Estonia</a></li>
+					<li><a href="#contact_us">Finland</a></li>
+					<li><a href="#contact_us">Germany</a></li>
+					<li><a href="#contact_us">Ghana</a></li>
+					<li><a href="#contact_us">India</a></li>
+					<li><a href="#contact_us">Indonesia</a></li>
+					<li><a href="#contact_us">Jamaica</a></li>
+					<li><a href="#contact_us">Japan</a></li>
+					<li><a href="#contact_us">Libya</a></li>
+					<li><a href="#contact_us">Lithuania</a></li>
+					<li><a href="#contact_us">Mexico</a></li>
+					<li><a href="#contact_us">Netherlands</a></li>
+					<li><a href="#contact_us">New Zealand</a></li>
+					<li><a href="#contact_us">Paraguay</a></li>
+					<li><a href="#contact_us">Russia</a></li>
+					<li><a href="#contact_us">Saudi Arabia</a></li>
+					<li><a href="#contact_us">Switzerland</a></li>
+					<li><a href="#contact_us">Syria</a></li>
+					<li><a href="#contact_us">Turkey</a></li>
+					<li><a href="#contact_us">Ukraine</a></li>
+					<li><a href="#contact_us">United Arab Emirates</a></li>
+					<li><a href="#contact_us">United Kingdom</a></li>
+					<li><a href="#contact_us">United States of America</a></li>
+					<li><a href="#contact_us">Yemen</a></li>
+					<li><a href="#contact_us">Yugoslavia</a></li>
+				</ul>
+			</div>
+			<div data-role="footer">
+				<div data-role="controlgroup" data-type="horizontal">
+					<a href="#home" data-role="button" data-icon="home">Home</a>
+					<a href="#contact_us" data-role="button" data-icon="info" data-role="button" data-rel="dialog" data-transition="pop">Contact Us</a>
+				</div>
+				<h4>©2012 myCompany</h4>
+			</div>
+		</div>
+		
+		<div data-role="page" id="contact_us" data-title="Contact Us">
+			<div data-role="header">
+				<h1>Contact Us</h1>
+			</div>
+			<div data-role="content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Street Address<br/>City, Country</p>
+				<p><a href="tel:5555555555">(555) 555-5555</a></p>
+			</div>
+			<div data-role="footer">
+				&nbsp;
+			</div>
+		</div>
+
+
+	</body>
+</html>
